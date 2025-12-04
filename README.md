@@ -1,4 +1,4 @@
-### Environment Setup
+# Environment Setup
 
 Python Version
     Use Python 3.9+
@@ -26,7 +26,7 @@ Go to Settings → Accelerator → GPU
 Install dependencies (if needed):
 pip install torch torchvision torchaudio --upgrade
 
-### Dataset Preparation
+# Dataset Preparation
 
 This project uses the Kaggle dataset:
 Cats, Dogs & Pandas Images Dataset
@@ -43,7 +43,7 @@ Data Loading
     Random rotation
     Random crop
 
-### Model Design (Transfer Learning)
+# Model Design (Transfer Learning)
 
 We use ResNet18 (pretrained on ImageNet).
 
@@ -59,7 +59,7 @@ The model runs on GPU if available:
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
 
-### Training
+# Training
 Training Configuration
 Item	Value
 Loss	CrossEntropyLoss
@@ -72,7 +72,7 @@ Model Checkpointing
 
 Best model is saved using validation accuracy.
 
-### Evaluation
+# Evaluation
 
 After training, we compute:
     Test Metrics
@@ -85,14 +85,14 @@ Plots
 
 These outputs are included inside the Jupyter notebook.
 
-### Results
+# Results
 
 The model achieves:
 High classification accuracy
 Clear separation in confusion matrix
 Reliable performance even with small dataset sizes
 
-### Author
+# Author
 
-KESAVAN S
-212224230121
+### KESAVAN S
+### 212224230121
